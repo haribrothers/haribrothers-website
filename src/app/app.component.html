@@ -1,0 +1,99 @@
+<div class="app-container">
+  <div #body class="body" (scroll)="stickHeaderOnTop($event)">
+    <site-header #header class="header"></site-header>
+    <div class="hero-image">
+      <div class="overlay"></div>
+      <div class="hero-content rellax" data-rellax-speed="4">
+        <h2 class="hero-text rellax" data-rellax-speed="1">Welcome to</h2>
+        <div class="logo rellax"  data-rellax-speed="2">
+          <!-- <div class="logo-image">HB</div> -->
+          <div class="logo-text">hari<span class="title-sub-text">prasad</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="my-content">
+      <div class="container">
+        <div  [fxLayout]="'row wrap'" fxLayoutAlign="center ">
+          <ng-container *ngFor="let a of [1,2,3,4,5]" >
+            <div  #cards [fxFlex.xs]="100" [fxFlex.sm]="50" [fxFlex]="33.33" class="card-container">
+              <div class="card full-height">
+                <div class="card-image"></div>
+                <div class="card-header">
+                  <h3 class="card-title">Sample header</h3>
+                  <p class="card-desc">this is a sample desc</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Morbi viverra, ligula mattis porttitor finibus, turpis diam luctus nisl, consequat gravida nunc sapien non ligula. Cras tincidunt finibus consequat. Vivamus eget nibh in nisl pellentesque ultrices. Quisque id est facilisis mi faucibus vulputate lacinia eu metus. Nunc a quam enim.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <div fxLayout fxLayoutGap="8px">
+                    <a href="#" class="btn btn-link btn-primary">Read more</a>
+                    <!-- <a href="#" class="btn btn-accent">Sample</a> -->
+                    <div fxFlex="auto"></div>
+                    <a href="#" class="btn btn-link btn-primary">
+                      <i class="material-icons">chat</i>
+                    </a>
+                    <a href="#" class="btn btn-link btn-accent">
+                      <i class="material-icons">favorite</i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+      <div class="container">
+        <div class="title-image"></div>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum quis odio vitae vehicula. Morbi eu erat imperdiet,efficitur
+          odio sit amet, condimentum odio. In id placerat tortor. Sed vel volutpat risus. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas. Cras gravida porttitor velit, id tempus velit tristique eu.
+          Phasellus auctor dui id neque gravida, vitae maximus eros varius.
+        </p>
+        <p>
+          Maecenas semper ligula ac neque ornare molestie. Integer aliquet, felis sed suscipit ultricies, tellus nibh tincidunt nunc,
+          sed efficitur diam est sit amet quam. Suspendisse at interdum diam. Sed et venenatis diam. Phasellus sed congue velit.
+          Aenean nisl arcu, dignissim interdum condimentum sit amet, auctor vitae sem. Nunc gravida rhoncus elit. Sed ac nibh
+          nibh. Quisque bibendum est quis sem lobortis, sit amet bibendum massa dapibus. Aenean quis consequat lacus.
+        </p>
+        <blockquote>
+          Quisque id est facilisis mi faucibus vulputate lacinia
+          eu metus. Nunc a quam enim. Nam ac purus vestibulum, rhoncus purus eleifend, sodales erat
+        </blockquote>
+        <p>
+          Morbi viverra, ligula mattis porttitor finibus, turpis diam luctus nisl, consequat gravida nunc sapien non ligula. Cras tincidunt
+          finibus consequat. Vivamus eget nibh in nisl pellentesque ultrices. Quisque id est facilisis mi faucibus vulputate lacinia
+          eu metus. Nunc a quam enim. Nam ac purus vestibulum, rhoncus purus eleifend, sodales erat. Maecenas vestibulum ut odio
+          sit amet luctus. Vestibulum finibus odio eu nibh molestie, ac lacinia erat blandit. Duis nec lobortis erat, id dictum
+          eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        </p>
+        <p>
+          Sed a porttitor nulla. Mauris nec elit molestie, ultricies ex sed, blandit risus. Vestibulum eu elementum mi. Nulla eget
+          libero est. Morbi imperdiet sem felis, quis faucibus lacus tincidunt sit amet. Nam ac nibh quis elit faucibus porttitor
+          nec sit amet nulla. In eu purus nunc. Donec vestibulum maximus nulla, eu posuere lectus consequat at. Donec placerat
+          quam eget aliquet euismod. Nulla congue tortor orci, eget tristique velit finibus vitae. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas fermentum mi ut euismod bibendum. Quisque eleifend
+          condimentum sollicitudin. In hac habitasse platea dictumst.
+        </p>
+        <p>
+          Vivamus sed ipsum magna. Integer sit amet risus eu dui pellentesque interdum. Praesent gravida sapien ante, suscipit fermentum
+          erat ultrices quis. Sed consectetur maximus justo in vehicula. Fusce malesuada mauris vitae vulputate vulputate. Aenean
+          nisl felis, rutrum sit amet vulputate ac, pharetra quis leo. Sed nec dictum justo. Vivamus varius orci et nibh tempus,
+          a mollis leo finibus. Curabitur felis tellus, commodo et urna quis, finibus tempus urna. Donec tempus nisi eu convallis
+          fermentum.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container full-height" fxLayout fxLayoutAlign="start center">
+        <div class="footer-text">© 2019 haribrothers</div>
+      </div>
+    </div>
+  </div>
+  
+
+</div>

@@ -1,0 +1,57 @@
+$header-background: rgba(10, 61, 98, 0.815);
+site-header {
+  background-color: $header-background;
+  .material-icons {
+    color: #fff;
+  }
+  .header-title{
+    color: #fff;
+    &:before {
+      border-color: #a9d3fd;
+      color: #a9d3fd;
+    }
+    .title-sub-text {
+      color: #DFAF2B;
+    }
+  }
+}
+
+site-header {
+  height: 72px;
+  padding: 0 20px;
+  .material-icons {
+    margin-left: 20px;
+  }
+  .header-title{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+    &:before {
+      content: "HB";
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      padding-left: 6px;
+      margin-right: 8px;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 50%;
+      background-color: #24283a;
+      font-size: 20px;
+      line-height: 38px;
+      font-weight: 300;
+    }
+    .title-sub-text {
+      font-weight: 500;
+    }
+  }
+} 
+
+
+// Layout Properties (position, float, clear, display)
+// Box Model Properties (width, height, margin, padding)
+// Visual Properties (color, background, border, box-shadow)
+// Typography Properties (font-size, font-family, text-align, text-transform)
+// Misc Properties (cursor, overflow, z-index)
+
+

@@ -1,0 +1,148 @@
+/* Add application styles & imports to this file! */
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  color: #192A56;
+}
+ 
+p {
+  color: #616C6F;
+}
+
+.full-height{
+  height: 100%;
+}
+
+.card-container {
+  padding: 8px;
+}
+
+.card{
+  min-height: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: box-shadow 0.2s ease-in-out;
+  overflow: hidden;
+  &:hover {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 
+                0px 8px 10px 1px rgba(0, 0, 0, 0.14), 
+                0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  .card-image {
+    background: url("https://picsum.photos/id/0/1000/400") no-repeat center;
+    background-size: cover;
+    height: 200px;
+  }
+  .card-header, .card-content {
+    margin: 16px;
+  }
+  .card-header {
+    .card-title {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .card-desc {
+      margin: 0;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.54);
+    }
+  }
+  .card-action {
+    border-top: 1px solid #ddd;
+    padding: 8px;
+  }
+}
+
+.btn {
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333945;
+  transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out;
+  // &.btn-icon {
+  //   border-radius: 50%;
+  // }
+  &:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  &.btn-primary {
+    background-color: #4834DF;
+    color: #fff;
+    &:hover {
+      background-color: darken(#4834DF,15%);
+    }
+  }
+  &.btn-accent {
+    background-color: #E5B143;
+    color: #fff;
+    &:hover {
+      background-color: darken(#E5B143,15%);
+    }
+  }
+  &.btn-link {
+    &.btn-primary {
+      color: #4834DF;
+      background-color:transparent;
+      &:hover {
+        color: darken(#4834DF,15%);
+      }
+    }
+    &.btn-accent {
+      color: #E5B143;
+      background-color:transparent;
+      &:hover {
+        color: darken(#E5B143,15%);
+      }
+    }
+  }
+}
+
+.logo {
+  font-size: 24px;
+  .logo-image {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-right: 8px;
+    border-width: 0.05em;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: #24283a;
+    border-color: #a9d3fd;
+    color: #a9d3fd;
+    font-size: 0.85em;
+    line-height: 1.9em;
+    font-weight: 300;
+    text-align: center;
+  }
+  .logo-text{
+    display: inline-block;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.33em;
+    font-weight: 300;
+    
+    .title-sub-text {
+      color: #DFAF2B;
+      font-weight: 500;
+    }
+  }
+}
